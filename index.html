@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Vision · Comunicação visual, fachadas e letreiros</title>
+<meta name="description" content="Placas, fachadas, letreiros, totens e envelopamentos. Do projeto à instalação. Simule sua fachada e peça orçamento pelo WhatsApp.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#111311">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{
+  --preto:#111311; --preto-2:#1B1E1B; --preto-3:#262A26;
+  --verde:#3CE62A; --verde-2:#2FC31F;
+  --branco:#FFFFFF; --cinza:#F2F3F1; --cinza-2:#E3E5E1;
+  --ink:#121412; --ink-2:#5E655E;
+  --gut:clamp(16px,4vw,56px); --max:1280px; --r:4px;
+  --cond:"Barlow Condensed",Impact,sans-serif; --body:"Barlow",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--branco);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.h{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.92}
+h2.h{font-size:clamp(44px,6.4vw,92px)}
+.h em{font-style:normal;color:var(--verde)}
+.lead{font-size:clamp(17px,1.45vw,20px);color:var(--ink-2);max-width:34em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 28px;border-radius:var(--r);font:700 17px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;transition:background .2s,color .2s,transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-verde{background:var(--verde);color:var(--preto)}.btn-verde:hover{background:#5BF04B}
+.btn-line{box-shadow:inset 0 0 0 2px currentColor}
+.btn-preto{background:var(--preto);color:#fff}.btn-preto:hover{background:var(--preto-3)}
+.btn svg{width:20px;height:20px;flex:none}
+
+header.top{position:sticky;top:0;z-index:40;background:var(--preto);color:#fff;border-bottom:1px solid #2A2E2A}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.mark{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.mark svg{width:58px;height:38px;flex:none}
+.mark b{display:block;font:800 26px/.9 var(--cond);letter-spacing:.02em}
+.mark small{display:block;font:600 11px/1 var(--body);letter-spacing:.22em;color:#9DA59D;margin-top:4px;text-transform:uppercase}
+nav.links{display:flex;gap:30px;font:600 16px/1 var(--cond);text-transform:uppercase;letter-spacing:.08em;color:#C9CEC9}
+nav.links a:hover{color:var(--verde)}
+header.top .btn{height:46px;padding:0 20px;font-size:15px}
+
+.hero{position:relative;color:#fff;background:var(--preto);overflow:hidden;min-height:min(88vh,780px);display:flex;align-items:flex-end}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(10,12,10,.68);z-index:1}
+.hero .wrap{position:relative;z-index:2;padding-top:140px;padding-bottom:clamp(48px,7vw,96px)}
+.hero h1{font-size:clamp(56px,9vw,136px)}
+.hero h1 .l{display:block;white-space:nowrap}
+.hero .lead{color:#E2E6E2;margin-top:26px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .chev{position:absolute;right:var(--gut);bottom:clamp(48px,7vw,96px);width:clamp(120px,14vw,200px);z-index:2;opacity:.95}
+
+.ticker{background:var(--verde);color:var(--preto);overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-flex;gap:38px;padding:16px 0;font:800 22px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em;animation:tk 32s linear infinite}
+.ticker span::after{content:"›";margin-left:38px}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+.serv{padding:clamp(80px,10vw,140px) 0}
+.head{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,20px)}
+.s{position:relative;overflow:hidden;border-radius:var(--r);background:var(--preto);color:#fff;min-height:400px;display:flex;align-items:flex-end}
+.s img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.s:hover img{transform:scale(1.04)}
+.s::before{content:"";position:absolute;inset:0;background:rgba(10,12,10,.55);z-index:1}
+.s .b{position:relative;z-index:2;padding:clamp(20px,2.4vw,32px)}
+.s h3{font:800 clamp(32px,3.2vw,46px)/.95 var(--cond);text-transform:uppercase}
+.s p{color:#E3E7E3;margin-top:10px;font-size:16px;max-width:26em}
+.s .n{position:absolute;top:18px;left:20px;z-index:2;font:700 15px/1 var(--cond);letter-spacing:.1em;color:var(--verde)}
+.s1{grid-column:span 7;min-height:480px}.s2{grid-column:span 5;min-height:480px}.s3{grid-column:span 4}.s4{grid-column:span 4}.s5{grid-column:span 4}
+
+.sim{background:var(--preto);color:#fff;padding:clamp(80px,10vw,140px) 0}
+.sim .lead{color:#BFC5BF}
+.stage{position:relative;border-radius:var(--r);overflow:hidden;background:#000;aspect-ratio:16/8.4;margin-top:clamp(32px,4vw,48px);user-select:none}
+.facade{position:absolute;left:0;right:0;top:0;height:38%;display:grid;place-items:center;transition:background .4s,box-shadow .4s;border-bottom:10px solid rgba(0,0,0,.38);z-index:2}
+.facade::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 calc(25% - 1px),rgba(0,0,0,.22) calc(25% - 1px) 25%);pointer-events:none;z-index:0}
+.facade.lona::after{display:none}
+.shop{position:absolute;left:0;right:0;bottom:0;top:38%;overflow:hidden}
+.shop img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;filter:grayscale(1) brightness(.9)}
+.shop::after{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:rgba(0,0,0,.45)}
+.sign{position:relative;z-index:1;display:inline-block;font-size:clamp(28px,6.4vw,92px);line-height:1;white-space:nowrap;transition:color .4s,text-shadow .4s,filter .4s;padding:0 4%;max-width:100%}
+.night .shop img{filter:grayscale(1) brightness(.35)}
+.dim{position:absolute;inset:0;background:rgba(5,8,20,0);pointer-events:none;transition:background .4s;z-index:3}
+.night .dim{background:rgba(5,8,20,.45)}
+.night .sign.lit{z-index:4}
+.tagmat{position:absolute;left:16px;bottom:16px;z-index:5;background:rgba(17,19,17,.86);color:#fff;font:700 14px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;padding:10px 14px;border-radius:var(--r)}
+.tagmat b{color:var(--verde)}
+.controls{display:grid;grid-template-columns:1.2fr 1.6fr 1fr 1fr;gap:clamp(14px,2vw,28px);margin-top:26px;align-items:end}
+.ctl label,.ctl .lb{display:block;font:700 14px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:#9DA59D;margin-bottom:10px}
+.ctl input[type=text]{width:100%;height:52px;border-radius:var(--r);border:0;background:var(--preto-3);color:#fff;padding:0 16px;font-size:18px;font-weight:600}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{height:44px;padding:0 14px;border-radius:var(--r);background:var(--preto-3);font:700 15px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:#D6DBD6;transition:background .2s,color .2s}
+.seg button[aria-pressed=true]{background:var(--verde);color:var(--preto)}
+.sw{display:flex;gap:8px}
+.sw button{width:44px;height:44px;border-radius:50%;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25)}
+.sw button[aria-pressed=true]{box-shadow:0 0 0 3px var(--preto),0 0 0 5px var(--verde)}
+.sim .send{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:30px;padding-top:26px;border-top:1px solid #2A2E2A;flex-wrap:wrap}
+.sim .send p{color:#BFC5BF;max-width:36em}
+
+.port{padding:clamp(80px,10vw,140px) 0;background:var(--cinza)}
+.pgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,18px)}
+.pc{display:block}
+.pc .ph{aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:#000}
+.pc img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pc:hover img{transform:scale(1.04)}
+.pc b{display:block;font:700 18px/1.05 var(--cond);text-transform:uppercase;margin-top:12px}
+.pc span{display:block;font-size:14px;color:var(--ink-2);margin-top:4px;line-height:1.35}
+
+.proc{padding:clamp(80px,10vw,140px) 0}
+.proc .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,6vw,96px);align-items:center}
+.proc .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:4/4.6}
+.proc .pic img{width:100%;height:100%;object-fit:cover}
+ol.st{list-style:none;margin-top:34px;counter-reset:c}
+ol.st li{counter-increment:c;display:grid;grid-template-columns:76px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--cinza-2)}
+ol.st li::before{content:"0" counter(c);font:800 46px/.9 var(--cond);color:var(--verde-2)}
+ol.st b{display:block;font:800 26px/1 var(--cond);text-transform:uppercase;margin-bottom:6px}
+ol.st p{color:var(--ink-2);font-size:16px}
+
+.wrapz{background:var(--preto);color:#fff}
+.wrapz .wrap{display:grid;grid-template-columns:1fr 1fr;padding:0;max-width:none}
+.wrapz .pic{position:relative;min-height:600px}
+.wrapz .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wrapz .txt{padding:clamp(56px,7vw,110px) clamp(24px,6vw,96px);display:flex;flex-direction:column;justify-content:center}
+.wrapz .lead{color:#BFC5BF;margin-top:22px}
+.wrapz ul{list-style:none;margin:28px 0 34px;display:grid;gap:12px}
+.wrapz li{display:flex;gap:12px;align-items:center;font-size:17px}
+.wrapz li::before{content:"";width:12px;height:12px;background:var(--verde);clip-path:polygon(0 0,50% 0,100% 50%,50% 100%,0 100%,50% 50%)}
+.wrapz .duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
+.wrapz .duo img{border-radius:var(--r);aspect-ratio:9/12;object-fit:cover;width:100%}
+
+.end{background:var(--verde);color:var(--preto);padding:clamp(80px,10vw,130px) 0}
+.end .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.end h2{font-size:clamp(50px,7.4vw,110px)}
+.end .lead{color:#173414;margin-top:22px}
+.end .ctas{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.end .btn-line{color:var(--preto)}
+.end .num{font:800 clamp(30px,3vw,42px)/1 var(--cond);margin-bottom:10px}
+footer{background:var(--preto);color:#9DA59D;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;padding-bottom:28px}
+footer a{text-decoration:underline;text-underline-offset:3px}
+
+.toast{position:fixed;left:50%;top:22px;transform:translate(-50%,-200px);z-index:60;background:var(--verde);color:var(--preto);border-radius:var(--r);padding:14px 20px;font-weight:700;transition:transform .35s;max-width:calc(100% - 32px)}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.ticker div{animation:none}}
+
+@media (max-width:1020px){
+  nav.links{display:none}
+  .head,.proc .wrap,.end .wrap{grid-template-columns:1fr}
+  .s1,.s2{grid-column:span 12;min-height:380px}
+  .s3,.s4,.s5{grid-column:span 6;min-height:320px}
+  .s5{grid-column:span 12}
+  .controls{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .wrapz .wrap{grid-template-columns:1fr}
+  .wrapz .pic{min-height:380px}
+  .hero .chev{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  header.top .wrap{height:66px}
+  .mark svg{width:46px;height:30px}
+  .mark b{font-size:22px}
+  .mark small{font-size:10px;letter-spacing:.16em}
+  header.top .btn{height:42px;padding:0 14px}
+  header.top .btn span{display:none}
+  .hero{min-height:620px}
+  .s3,.s4{grid-column:span 12}
+  .stage{aspect-ratio:4/3.4}
+  .controls{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .ticker div{font-size:18px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ov" viewBox="0 0 124 80"><path fill="#3CE62A" d="M0 0h13l28 40-28 40H0l28-40z"/><path fill="#fff" d="M19 0h9l28 40-28 40h-9l28-40z"/><path fill="#3CE62A" d="M34 0h13l28 40-28 40H34l28-40z"/><path fill="#fff" d="M54 0h42l28 40-28 40H54l28-40z"/></symbol></svg>
+
+<header class="top"><div class="wrap">
+  <a class="mark" href="#topo" aria-label="One Vision, início"><svg><use href="#ov"/></svg><span><b>ONE VISION</b><small>Comunicação visual</small></span></a>
+  <nav class="links" aria-label="Seções"><a href="#servicos">Serviços</a><a href="#simulador">Simulador</a><a href="#trabalhos">Trabalhos</a><a href="#envelopamento">Envelopamento</a></nav>
+  <a class="btn btn-verde" href="https://wa.me/5548988421161?text=Ol%C3%A1%2C%20One%20Vision!%20Quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.2 1.3Z"/></svg><span>Pedir orçamento</span></a>
+</div></header>
+
+<main id="topo">
+<section class="hero">
+  <img src="img/hero.jpg" alt="Letreiro em letras caixa iluminado numa fachada à noite" fetchpriority="high">
+  <div class="wrap">
+    <h1 class="h"><span class="l">Sua marca</span> <span class="l">vista <em>de longe.</em></span></h1>
+    <p class="lead">Placas, fachadas, letreiros, totens e envelopamentos. A One Vision cuida do projeto à instalação, com acabamento que aguenta sol, chuva e o tempo.</p>
+    <div class="ctas">
+      <a class="btn btn-verde" href="#simulador">Simular minha fachada</a>
+      <a class="btn btn-line" href="#trabalhos">Ver trabalhos</a>
+    </div>
+  </div>
+  <svg class="chev" viewBox="0 0 124 80" aria-hidden="true"><use href="#ov"/></svg>
+</section>
+<div class="ticker" aria-hidden="true"><div><span>Fachadas em ACM</span><span>Letreiros em PVC</span><span>Letra caixa iluminada</span><span>Lona backlight</span><span>Totens</span><span>Envelopamento</span><span>Adesivos</span><span>Fachadas em ACM</span><span>Letreiros em PVC</span><span>Letra caixa iluminada</span><span>Lona backlight</span><span>Totens</span><span>Envelopamento</span><span>Adesivos</span></div></div>
+
+<section class="serv" id="servicos">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 class="h">Tudo em comunicação <em>visual</em></h2>
+      <p class="lead">Do primeiro rabisco ao parafuso final. A gente mede, desenha, produz e instala, para a sua empresa ser encontrada e lembrada.</p>
+    </div>
+    <div class="sgrid">
+      <article class="s s1 rv"><img src="img/fachada.jpg" alt="Fachada com letreiro iluminado à noite" loading="lazy"><span class="n">01</span><div class="b"><h3>Fachadas e marquises</h3><p>Estrutura metálica com revestimento em ACM, na cor da sua marca. A loja muda de cara de uma semana para a outra.</p></div></article>
+      <article class="s s2 rv"><img src="img/letreiro.jpg" alt="Letreiro em letras caixa sobre parede de madeira" loading="lazy"><span class="n">02</span><div class="b"><h3>Letreiros</h3><p>Letras em PVC expandido de 10 a 20 mm, com ou sem iluminação por trás.</p></div></article>
+      <article class="s s3 rv"><img src="img/placa.jpg" alt="Placa luminosa com logo" loading="lazy"><span class="n">03</span><div class="b"><h3>Placas e totens</h3><p>ACM com face em acrílico, lona backlight e totens iluminados.</p></div></article>
+      <article class="s s4 rv"><img src="img/envelopamento.jpg" alt="Aplicação de envelopamento no farol de um carro" loading="lazy"><span class="n">04</span><div class="b"><h3>Envelopamento</h3><p>Carros, frotas, móveis e bancadas com vinil de alta durabilidade.</p></div></article>
+      <article class="s s5 rv"><img src="img/impressora.jpg" alt="Impressora de grandes formatos imprimindo" loading="lazy"><span class="n">05</span><div class="b"><h3>Adesivos e impressão</h3><p>Adesivos recortados, vitrines, banners e lonas em grande formato.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sim" id="simulador">
+  <div class="wrap">
+    <div class="head rv" style="margin-bottom:0">
+      <h2 class="h">Veja sua fachada <em>antes</em> de fechar</h2>
+      <p class="lead">Digite o nome da sua empresa, escolha o material e a cor, e veja de dia e de noite. Depois é só mandar para a gente fazer o orçamento.</p>
+    </div>
+    <div class="stage rv" id="stage">
+      <div class="facade" id="facade"><div class="sign" id="sign">Sua Marca</div></div>
+      <div class="shop"><img src="img/vitrine.jpg" alt=""></div>
+      <div class="dim"></div>
+      <div class="tagmat" id="tagmat"></div>
+    </div>
+    <div class="controls">
+      <div class="ctl"><label for="nome">Nome da empresa</label><input type="text" id="nome" maxlength="22" value="Sua Marca" autocomplete="off"></div>
+      <div class="ctl"><span class="lb">Material</span><div class="seg" id="mat"></div></div>
+      <div class="ctl"><span class="lb">Cor da fachada</span><div class="sw" id="cor"></div></div>
+      <div class="ctl"><span class="lb">Ver</span><div class="seg" id="hora"><button aria-pressed="true" data-h="dia">Dia</button><button aria-pressed="false" data-h="noite">Noite</button></div></div>
+    </div>
+    <div class="send rv">
+      <p>Simulação ilustrativa. Na visita técnica a gente mede a fachada e manda o projeto com as medidas reais.</p>
+      <a class="btn btn-verde" id="enviar" href="#" target="_blank" rel="noopener">Pedir orçamento desta fachada</a>
+    </div>
+  </div>
+</section>
+
+<section class="port" id="trabalhos">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 class="h">Trabalhos <em>entregues</em></h2>
+      <p class="lead">Alguns dos projetos que saíram da nossa oficina. Os vídeos completos estão no <a href="https://www.instagram.com/onevisioncomunicacaovisual/" target="_blank" rel="noopener" style="color:var(--ink);font-weight:700;text-decoration:underline">@onevisioncomunicacaovisual</a>.</p>
+    </div>
+    <div class="pgrid rv" id="pgrid"></div>
+  </div>
+</section>
+
+<section class="proc">
+  <div class="wrap">
+    <div class="pic rv"><img src="img/vinil.jpg" alt="Aplicação de vinil com espátula" loading="lazy"></div>
+    <div class="rv">
+      <h2 class="h">Do projeto à <em>instalação</em></h2>
+      <ol class="st">
+        <li><div><b>Visita técnica</b><p>A gente vai até o local, mede a fachada e entende como o cliente chega até você.</p></div></li>
+        <li><div><b>Projeto</b><p>Você recebe a arte aplicada na foto da sua fachada, com material, medidas e valor.</p></div></li>
+        <li><div><b>Produção</b><p>Corte, impressão e montagem na nossa oficina, com material para área externa.</p></div></li>
+        <li><div><b>Instalação</b><p>Equipe própria instala, testa a iluminação e deixa tudo limpo.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="wrapz" id="envelopamento">
+  <div class="wrap">
+    <div class="pic rv"><img src="img/carro.jpg" alt="Envelopamento laranja sendo aplicado num carro" loading="lazy"></div>
+    <div class="txt rv">
+      <h2 class="h">Envelopamento <em>muda tudo</em></h2>
+      <p class="lead">Carro com cor nova, frota com a sua marca rodando pela cidade, ou aquela bancada velha com cara de mármore. Sem obra e sem pintura.</p>
+      <div class="duo">
+        <img src="img/t11.jpg" alt="Pia envelopada com vinil efeito mármore, trabalho da One Vision" loading="lazy">
+        <img src="img/t6.jpg" alt="Fachada da Up Wash, trabalho da One Vision" loading="lazy">
+      </div>
+      <ul><li>Carros e motos, total ou parcial</li><li>Frotas e veículos de empresa</li><li>Móveis, bancadas e paredes</li></ul>
+      <a class="btn btn-verde" style="align-self:flex-start" href="https://wa.me/5548988421161?text=Ol%C3%A1%2C%20One%20Vision!%20Quero%20um%20or%C3%A7amento%20de%20envelopamento." target="_blank" rel="noopener">Orçar envelopamento</a>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <div class="rv">
+      <h2 class="h">Bora deixar sua marca em evidência?</h2>
+      <p class="lead">Mande uma foto da sua fachada ou do que você quer envelopar. A gente responde com ideia e orçamento.</p>
+    </div>
+    <div class="ctas rv">
+      <div class="num">(48) 98842-1161</div>
+      <a class="btn btn-preto" href="https://wa.me/5548988421161?text=Ol%C3%A1%2C%20One%20Vision!%20Quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn-line" href="https://www.instagram.com/onevisioncomunicacaovisual/" target="_blank" rel="noopener">Ver o Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 One Vision Comunicação Visual · Placas, fachadas, letreiros e envelopamentos</span><span>Fotos de serviços ilustrativas: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Site por Evoly</span></div></footer>
+
+<script>
+const WA="https://wa.me/5548988421161?text=";
+const WORKS=[
+ ["t3","Tai Store","Letreiro em PVC expandido 10 mm"],
+ ["t4","Ramo","Letreiro em PVC retroiluminado"],
+ ["t10","Marquise","Estrutura metálica e ACM azul profundo"],
+ ["t7","Studio Fit","Totem em lona backlight e adesivos"],
+ ["t8","Sigma Coffee","Placa em ACM com face em acrílico"],
+ ["t5","Progress Ramps","Lona backlight com iluminação interna"],
+ ["t12","Fios & Formas","Placa em lona com iluminação"],
+ ["t13","Rafael Serviços","Letreiro em PVC expandido 20 mm"],
+ ["t9","Auto multimarcas","Letreiro em PVC expandido"],
+ ["t6","Up Wash","Placa em ACM com adesivo"],
+ ["t11","Pia em mármore","Envelopamento decorativo"],
+ ["t2","Bastidores","Instalação em obra"]
+];
+document.getElementById("pgrid").innerHTML=WORKS.map(w=>`<a class="pc" href="https://www.instagram.com/onevisioncomunicacaovisual/" target="_blank" rel="noopener"><div class="ph"><img src="img/${w[0]}.jpg" alt="${w[1]}: ${w[2]}" loading="lazy"></div><b>${w[1]}</b><span>${w[2]}</span></a>`).join("");
+
+const MAT=[
+ {id:"pvc",n:"Letra caixa PVC",f:'800 1em/1 "Barlow Condensed"',tt:"uppercase"},
+ {id:"retro",n:"Retroiluminado",f:'700 .9em/1 "Playfair Display"',tt:"none"},
+ {id:"acm",n:"ACM + acrílico",f:'700 .95em/1 "Barlow"',tt:"none"},
+ {id:"lona",n:"Lona backlight",f:'400 .9em/1.1 "Pacifico"',tt:"none"}
+];
+const COR=[["#16181A","Preto"],["#F4F4F2","Branco"],["#123A6B","Azul profundo"],["#3CE62A","Verde"],["#7A1E22","Vinho"]];
+let st={mat:"pvc",cor:0,noite:false};
+const $=id=>document.getElementById(id);
+$("mat").innerHTML=MAT.map(m=>`<button data-m="${m.id}" aria-pressed="${m.id===st.mat}">${m.n}</button>`).join("");
+$("cor").innerHTML=COR.map((c,i)=>`<button data-c="${i}" aria-pressed="${i===0}" aria-label="${c[1]}" style="background:${c[0]}"></button>`).join("");
+const light=h=>{const n=parseInt(h.slice(1),16);return((n>>16)*299+((n>>8)&255)*587+(n&255)*114)/1000>150};
+function draw(){
+  const m=MAT.find(x=>x.id===st.mat),[bg,cn]=COR[st.cor],fa=$("facade"),s=$("sign"),lt=light(bg);
+  s.textContent=$("nome").value.trim()||"Sua Marca";
+  s.style.font=m.f;s.style.fontSize="";s.style.textTransform=m.tt;
+  $("stage").classList.toggle("night",st.noite);
+  fa.className="facade"+(m.id==="lona"?" lona":"");
+  let ink=lt?"#16181A":"#FFFFFF",sh="none",fbg=bg,fsh="none";
+  if(m.id==="pvc"){sh=lt?"1px 1px 0 #bbb,2px 2px 0 #aaa,3px 3px 0 #999,6px 8px 10px rgba(0,0,0,.35)":"1px 1px 0 #ccc,2px 2px 0 #bbb,3px 3px 0 #aaa,6px 8px 10px rgba(0,0,0,.6)";if(st.noite)sh+=",0 0 18px rgba(255,255,255,.25)"}
+  if(m.id==="retro"){ink=lt?"#16181A":"#0d0d0d";sh=st.noite?"0 0 2px #fff,0 0 22px rgba(255,255,255,.95),0 0 46px rgba(255,255,255,.75)":"2px 3px 4px rgba(0,0,0,.4)";if(!lt&&!st.noite)ink="#2b2b2b"}
+  if(m.id==="acm"){ink=lt?"#123A6B":"#3CE62A";if(bg==="#3CE62A")ink="#16181A";sh=st.noite?`0 0 14px ${ink}`:"0 2px 0 rgba(0,0,0,.25)";s.style.background=lt?"rgba(255,255,255,.6)":"rgba(255,255,255,.12)";s.style.padding=".18em .5em";s.style.borderRadius="6px"}else{s.style.background="none";s.style.padding="0 4%"}
+  if(m.id==="lona"){fbg=st.noite?"#FFFDF2":"#F7F5EE";ink=bg==="#F4F4F2"?"#16181A":bg;fsh=st.noite?"0 0 60px rgba(255,250,220,.6)":"none"}
+  fa.style.background=fbg;fa.style.boxShadow=fsh;s.style.color=ink;s.style.textShadow=sh;
+  s.classList.toggle("lit",st.noite&&(m.id!=="pvc"));fa.style.zIndex=st.noite&&m.id!=="pvc"?4:"";
+  // ajusta tamanho
+  s.style.fontSize="";const max=fa.clientWidth*.86;let fs=parseFloat(getComputedStyle(s).fontSize);while(s.getBoundingClientRect().width>max&&fs>14){fs-=2;s.style.fontSize=fs+"px"}
+  $("tagmat").innerHTML=`<b>${m.n}</b> · fachada ${cn.toLowerCase()} · ${st.noite?"noite":"dia"}`;
+  $("enviar").href=WA+encodeURIComponent(`Olá, One Vision! Simulei minha fachada no site:\n• Nome: ${s.textContent}\n• Material: ${m.n}\n• Cor da fachada: ${cn}\nQuero um orçamento.`);
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-m]");if(a){st.mat=a.dataset.m;document.querySelectorAll("[data-m]").forEach(b=>b.setAttribute("aria-pressed",b===a));draw()}
+  const c=e.target.closest("[data-c]");if(c){st.cor=+c.dataset.c;document.querySelectorAll("[data-c]").forEach(b=>b.setAttribute("aria-pressed",b===c));draw()}
+  const h=e.target.closest("[data-h]");if(h){st.noite=h.dataset.h==="noite";document.querySelectorAll("[data-h]").forEach(b=>b.setAttribute("aria-pressed",b===h));draw()}
+});
+$("nome").addEventListener("input",draw);addEventListener("resize",draw);
+document.fonts&&document.fonts.ready.then(draw);draw();
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12,rootMargin:"0px 0px -5% 0px"});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
